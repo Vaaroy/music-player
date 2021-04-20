@@ -1,0 +1,27 @@
+ <div className="library">
+            <h2>Library</h2>
+            <div className="library-song">
+                {songs.map((song) => (
+                    <LibrarySong song={song} />
+                ))}
+            </div>
+        </div>
+
+
+
+        .library {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  h2 {
+    padding: 2rem;
+  }
+}
